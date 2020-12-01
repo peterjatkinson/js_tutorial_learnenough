@@ -28,3 +28,33 @@ function statesToUrl(elements) {
   return elements.map(element => urlify(element));
 }
 console.log(statesToUrl(states));
+
+// singles: Impreative version
+function imperativeSingles(elements) {
+  let singles = [];
+  elements.forEach(function(element) {
+    if (element.split(/\s+/).length === 1) {
+      singles.push(element);
+    }
+  });
+  return singles;
+}
+console.log(imperativeSingles(states));
+
+// singles: Functional version
+function functionalSingles(elements) {
+  return elements.filter(element => element.split(/\s+/).length === 1);
+}
+console.log(functionalSingles(states));
+
+// doubles: Functional version
+function functionalDoubles(elements) {
+  return elements.filter(element => element.split(/\s+/).length === 1);
+}
+console.log(functionalDoubles(states));
+
+// dakotas: Functional version
+function functionalDakotas(elements) {
+  return elements.filter(element => element.includes('Dakota'));
+}
+console.log(functionalDakotas(states));
