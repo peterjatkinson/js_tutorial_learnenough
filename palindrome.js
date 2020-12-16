@@ -24,6 +24,8 @@ function Phrase(content) {
   }
 }
 
+
+
 // // Defines a TranslatedPhrase object.
 // function TranslatedPhrase(content, translation) {
 //   this.content = content;
@@ -36,3 +38,14 @@ function Phrase(content) {
 // }
 
 // TranslatedPhrase.prototype = new Phrase();
+
+
+
+// Returing last element of an array exercise. Either of these two.
+// Array.prototype.last = function() {
+// 	return this[this.length-1];
+// }
+
+// Array.prototype.lastUsingSlicing = function() {
+//   return this.slice(-1)[0];
+// }
